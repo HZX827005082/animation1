@@ -16,9 +16,9 @@
 </head>
 <body>
     <div id="scroll-images">
-        <img src="images/1.jpg" alt="">
-        <img src="images/2.jpg" alt="">
-        <img src="images/3.jpg" alt="">
+        <img src="images/jcase_item_00.jpg" alt="">
+        <img src="images/jcase_item_01.jpg" alt="">
+        <img src="images/jcase_item_02.jpg" alt="">
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
     <script>
@@ -26,8 +26,8 @@
        var z_index=999;
        function job1(){
            $($("#scroll-images img")[index]).fadeOut(function(){
-               z_index =z_index -1;
-               $(this).css({z_Index:z_index});
+               z_index =z_index-1;
+               $(this).css({zIndex:z_index});
                $(this).show();
                index=index -1;
                if(index<0){
